@@ -43,7 +43,7 @@ componentDidMount() {
       <ul>
           {allTeams.map((item) => 
             <p key={item.id}>
-              <span>{item.TeamName}  </span>
+              <span>{item.name}  </span>
               <button onClick={() => this.deleteTeam(item.id)}>Delete</button>
               <button onClick={() => this.modifyTeam(item.id)}>Modify</button>
             </p>)}
